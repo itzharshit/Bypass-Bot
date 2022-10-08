@@ -1,5 +1,5 @@
 {
-    "name": "KC Bypass Bot",
+    "name": "Bypass Bot",
     "description": "KC Bypass Bot that can Bypass Ad Links and Generate Direct Links",
     "stack": "container",
     "website": "https://github.com/kccut/Bypass-Bot",
@@ -21,33 +21,9 @@
             "description": "Your GDTot Crypt!",
             "required": false
         },
-        "Laravel_Session": {
+        "UPSTREAM_REPO": {
             "description": "",
-            "required": false
-        },
-        "XSRF_TOKEN": {
-            "description": "",
-            "required": false
-        },
-        "KOLOP_CRYPT": {
-            "description": "",
-            "required": false
-        },
-        "DRIVEFIRE_CRYPT": {
-            "description": "",
-            "required": false
-        },
-        "HUBDRIVE_CRYPT": {
-            "description": "",
-            "required": false
-        },
-        "KATDRIVE_CRYPT": {
-            "description": "",
-            "required": false
-        },
-        "UPTOBOX_TOKEN": {
-            "description": "",
-            "required": false
+            "required": true
         }
     },
     "addons": [],
