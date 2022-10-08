@@ -1,6 +1,6 @@
 {
     "name": "Bypass Bot",
-    "description": "KC Bypass Bot that can Bypass Ad Links and Generate Direct Links",
+    "description": "Bypass Bot that can Bypass Ad Links and Generate Direct Links",
     "stack": "container",
     "website": "https://github.com/kccut/Bypass-Bot",
     "repository": "https://github.com/kccut/Bypass-Bot",
