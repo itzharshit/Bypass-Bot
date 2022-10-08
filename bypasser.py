@@ -1059,7 +1059,7 @@ def unified(url):
     try:
 
         Email = "kcmltb@gmail.com"
-        Password = "2022@tyson"
+        Password = "OPTIONAL"
 
         account = {"email": Email, "passwd": Password}
         client = cloudscraper.create_scraper(allow_brotli=False)
@@ -1111,6 +1111,12 @@ def unified(url):
             info_parsed["error_message"] = "Something went wrong :("
         if info_parsed["error"]:
             return info_parsed
+        if urlparse(url).netloc == "appdrive.info" and not info_parsed["error"]:
+            res = client.get(info_parsed["gdrive_link"])
+            drive_link = etree.HTML(res.content).xpath(
+                "//a[contains(@class,'btn')]/@href"
+            )[0]
+            info_parsed["gdrive_link"] = drive_link
         if urlparse(url).netloc == "driveapp.in" and not info_parsed["error"]:
             res = client.get(info_parsed["gdrive_link"])
             drive_link = etree.HTML(res.content).xpath(
