@@ -6,7 +6,7 @@ else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
   git clone $UPSTREAM_REPO /Bypass-Bot
 fi
-cd /KC-Bypass-Bot
+cd /Bypass-Bot
 pip3 install -U -r requirements.txt
 echo "Starting Bypass Bot...."
 python3 main.py
